@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">HomeWork-5</string>
+    <string name="username">UserName</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="age">Age</string>
+    <string name="emailaddress">EmailAddress</string>
+    <string name="email_not_valid">Email is not validate</string>
+    <string name="username_length">Username length is less than 10</string>
+    <string name="age_not_integer">Age is not integer</string>
+    <string name="fill_every_fields">You must fill every field</string>
+    <string name="fill_fields">Success</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="login">Login</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="profile">Profile</string>
+    <string name="years_old">Years Old</string>
+</resources>

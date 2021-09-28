@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gdTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loginTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/emailEditTxt"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toTopOf="@id/gdTop"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailEditTxt"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="10dp"
+        android:hint="@string/emailaddress"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/userNameEditTxt"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/loginTxtView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/userNameEditTxt"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="@dimen/std_margin"
+        android:hint="@string/username"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/firstNameEditTxt"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTxt" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/firstNameEditTxt"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="@dimen/std_margin"
+        android:hint="@string/firstname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/lastNameEditTxt"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditTxt" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/lastNameEditTxt"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="@dimen/std_margin"
+        android:hint="@string/lastname"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ageEditTxt"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameEditTxt" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ageEditTxt"
+        style="@style/edit_text"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="@dimen/std_margin"
+        android:hint="@string/age"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameEditTxt" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/edit_txt_height"
+        android:layout_marginTop="@dimen/std_margin"
+        android:background="@drawable/login_button_background"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@id/gdEnd"
+        app:layout_constraintStart_toStartOf="@id/gdStart"
+        app:layout_constraintTop_toBottomOf="@+id/ageEditTxt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
